@@ -1,0 +1,24 @@
+[project]
+name = "rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "krag57", email = "krag57@yahoo.com" }
+]
+requires-python = ">=3.8"
+dependencies = [
+    "jupyter>=1.1.1",
+    "minsearch>=0.0.3",
+    "openai>=2.2.0",
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.4",
+    "weaviate-client>=4.8.1",
+]
+
+[project.scripts]
+rag = "rag:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
