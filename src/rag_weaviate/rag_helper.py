@@ -99,9 +99,7 @@ if __name__ == "__main__":
     {context}
     """.strip()
 
-    parser = argparse.ArgumentParser(
-        description="RAG Application on QA for the course"
-    )
+    parser = argparse.ArgumentParser(description="RAG Application on QA for the course")
 
     parser.add_argument("-q","--question", type=str, help="the question you have about the course")
 
